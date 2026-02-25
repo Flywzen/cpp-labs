@@ -1,6 +1,6 @@
 # cpp-labs
 
-just a bunch of c++ scripts and logic exercises for physics laboratory and data management.
+just a bunch of c++ scripts of some logic exercises, physics laboratory and other stuff.
 
 ### Featured Project:
 * **AkuHemat**: Aplikasi management hutang (Debt Tracker) sederhana dengan fitur login, sorting, dan search.
