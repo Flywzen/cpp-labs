@@ -12,7 +12,7 @@ void setcolor(unsigned short color) {
 void intro() {
     system("COLOR 7");
     cout << "==========================================================================" << endl;
-    cout << " PROGRAM PENGUKURAN DAN KETIDAKPASTIAN (MODUL 1) By @flywzen" << endl;
+    cout << " PROGRAM PENGUKURAN DAN KETIDAKPASTIAN By @rafly.ryy" << endl;
     cout << "==========================================================================" << endl;
 }
 
