@@ -55,7 +55,7 @@ private:
 
     void printMessage() {
         vector<string> message = {
-            "\033[1;35mFor my Beloved girl:\033[0m",
+            "\033[1;35mFor my Beloved woman:\033[0m",
             "Jika dunia ini adalah sebuah program,",
             "Kaulah algoritma yang sempurna",
             "Yang mengoptimalkan setiap detik hidupku.",
@@ -63,7 +63,7 @@ private:
             "Seperti loop tak berhingga,",
             "Cintaku padamu takkan pernah berakhir.",
             "",
-            "\033[5;36mSemangat nugasnya sayangkuu <3 \033[0m" // Blinking effect
+            "\033[5;36mI'd write love() in every language just to prove it universal \033[0m" // Blinking effect
         };
 
         for(const auto& line : message) {
