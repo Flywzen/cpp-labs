@@ -8,7 +8,7 @@ using namespace std;
 void intro() { // Pakai void karena tidak mengembalikan nilai
     system("COLOR B");
     cout << "=========================================================================================" << endl;
-    cout << " PROGRAM PERHITUNGAN MEDAN MAGNET PADA SOLENOIDA By @flywzen" << endl;
+    cout << " PROGRAM PERHITUNGAN MEDAN MAGNET PADA SOLENOIDA By @rafly.ryy" << endl;
     cout << "=========================================================================================" << endl;
     cout << "\nNB: Gunakan titik (.) sebagai pengganti koma (,)\n" << endl;
 }
