@@ -1,10 +1,14 @@
 #include <iostream>
+#ifdef _WIN32
 #include <windows.h>
+#endif
 
 using namespace std;
 
 void intro() {
+#ifdef _WIN32
     system("COLOR 1"); // Biru
+#endif
     cout << "==========================================================================" << endl;
     cout << " PROGRAM HUKUM KEKEKALAN MOMENTUM By @rafly.ryy" << endl;
     cout << "==========================================================================" << endl;
@@ -36,5 +40,12 @@ void momentum() {
 }
 
 int main() {
-    intro(); momentum(); system("pause"); return 0;
+    intro(); momentum(); 
+#ifdef _WIN32
+    system("pause");
+#else
+    cout << "Tekan Enter untuk keluar...";
+    cin.ignore(); cin.get();
+#endif
+    return 0;
 }

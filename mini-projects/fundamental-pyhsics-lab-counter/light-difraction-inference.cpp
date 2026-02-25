@@ -1,11 +1,9 @@
 #include <iostream>
 #include <cmath>
-#include <windows.h>
 
 using namespace std;
 
 void difraksi() {
-    system("COLOR 5"); // Ungu
     double d, y, L, lambda_teori = 632e-9, lambda_perc;
     int n;
 
@@ -23,5 +21,8 @@ void difraksi() {
 }
 
 int main() {
-    difraksi(); system("pause"); return 0;
+    difraksi();
+    cout << "\nTekan Enter untuk keluar...";
+    cin.ignore(); cin.get();
+    return 0;
 }

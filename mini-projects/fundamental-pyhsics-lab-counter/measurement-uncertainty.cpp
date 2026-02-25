@@ -1,12 +1,17 @@
 #include <iostream>
 #include <cmath>
+
+#ifdef _WIN32
 #include <windows.h>
+#endif
 
 using namespace std;
 
 void setcolor(unsigned short color) {
+#ifdef _WIN32
     HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hCon, color);
+#endif
 }
 
 void intro() {
@@ -46,6 +51,11 @@ void hitungKetidakpastian() {
 int main() {
     intro();
     hitungKetidakpastian();
+#ifdef _WIN32
     system("pause");
+#else
+    cout << "Tekan Enter untuk keluar...";
+    cin.ignore(); cin.get();
+#endif
     return 0;
 }

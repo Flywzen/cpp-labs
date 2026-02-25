@@ -1,10 +1,14 @@
 #include <iostream>
+#ifdef _WIN32
 #include <windows.h>
+#endif
 
 using namespace std;
 
 void intro() {
+#ifdef _WIN32
     system("COLOR 6"); // Kuning
+#endif
     cout << "--- PROGRAM KECEPATAN BUNYI DI UDARA  ---" << endl;
 }
 
@@ -27,5 +31,12 @@ void hitungBunyi() {
 }
 
 int main() {
-    intro(); hitungBunyi(); system("pause"); return 0;
+    intro(); hitungBunyi(); 
+#ifdef _WIN32
+    system("pause");
+#else
+    cout << "Tekan Enter untuk keluar...";
+    cin.ignore(); cin.get();
+#endif
+    return 0;
 }

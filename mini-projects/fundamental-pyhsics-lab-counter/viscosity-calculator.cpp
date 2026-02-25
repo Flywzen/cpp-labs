@@ -1,14 +1,18 @@
 #include <iostream>
 #include <cmath>
+#ifdef _WIN32
 #include <windows.h>
+#endif
 #include <cstdlib>
 
 using namespace std;
 
 // Fungsi untuk mewarnai teks di terminal Windows
 void setcolor(unsigned short color) {
+#ifdef _WIN32
     HANDLE hCon = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hCon, color);
+#endif
 }
 
 void intro() {
@@ -66,6 +70,11 @@ int main() {
     hitungKetelitian();
     
     cout << "Program Selesai. Tetap semangat praktikumnya!" << endl;
+#ifdef _WIN32
     system("pause");
+#else
+    cout << "Tekan Enter untuk keluar...";
+    cin.ignore(); cin.get();
+#endif
     return 0;
 }
