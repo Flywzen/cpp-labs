@@ -1,4 +1,4 @@
-{
+{ //reconfigured
     "tasks": [
         {
             "type": "cppbuild",
