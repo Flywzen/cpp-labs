@@ -4,12 +4,20 @@
 #include <cstdlib>
 #include <iomanip>
 
+// Pengaman library untuk Windows
+#ifdef _WIN32
+#include <windows.h>
+#endif
+
 using namespace std;
 
 void intro() {
-    system("COLOR B");
+    // Pengaman: Perintah COLOR hanya dieksekusi jika dijalankan di Windows
+#ifdef _WIN32
+    system("COLOR 0B"); // Background hitam, teks Light Aqua (B)
+#endif
     cout << "========================================================================================" << endl;
-    cout << " PROGRAM PERHITUNGAN BANDUL MATEMATIS (MODUL 4) By @flywzen" << endl;
+    cout << " PROGRAM PERHITUNGAN BANDUL MATEMATIS By @rafly.ryy" << endl;
     cout << "========================================================================================" << endl;
     cout << "\n[!] INFO: Gunakan satuan METER untuk panjang tali dan DETIK untuk waktu." << endl;
     cout << "________________________________________________________________________________________\n" << endl;
@@ -41,11 +49,37 @@ void hitungGravitasi() {
 }
 
 int main() {
-    intro();
-    hitungGravitasi();
+    char pilihan;
+
+    // MASTER LOOP: Mengulang keseluruhan program
+    do {
+        // Fitur Auto-Clear Screen biar terminal rapi setiap kali ngulang
+#ifdef _WIN32
+        system("cls");
+#else
+        system("clear");
+#endif
+
+        intro();
+        hitungGravitasi();
+        
+        // Pertanyaan untuk looping
+        cout << "\n========================================================================================" << endl;
+        cout << "Ingin menghitung ulang data percobaan bandul lain? (y/n): ";
+        cin >> pilihan;
+
+    } while (pilihan == 'y' || pilihan == 'Y');
     
     cout << "\n________________________________________________________________________________________" << endl;
-    cout << "Perhitungan selesai. Jangan lupa catat di logbook praktikum!" << endl;
+    cout << "Perhitungan selesai. Data siap dipindahkan ke laporan!" << endl;
+    
+    // Pengaman pause cross-platform
+#ifdef _WIN32
     system("pause");
+#else
+    cout << "Tekan Enter untuk keluar...";
+    cin.ignore(); cin.get();
+#endif
+    
     return 0;
 }
