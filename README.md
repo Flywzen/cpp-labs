@@ -3,7 +3,7 @@
 just a bunch of c++ scripts of some logic exercises, physics laboratory and other stuff.
 
 ### Featured Project:
-* **AkuHemat**: Aplikasi management hutang (Debt Tracker) sederhana dengan fitur login, sorting, dan search.
+* **AkuHemat**: Program management hutang (Debt Tracker) sederhana dengan fitur login, sorting, dan search.
 
 ### Physics Lab Suite (9 Modules):
 Kumpulan script bantu hitung untuk 9 modul praktikum Fisika Dasar:
