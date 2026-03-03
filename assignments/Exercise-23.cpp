@@ -1,7 +1,9 @@
 //Latihan 1
 //123140148
 
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 //Deklarasi struct data Task
 struct Task{
