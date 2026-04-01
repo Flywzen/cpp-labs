@@ -12,18 +12,18 @@ int main() {
     cout << "\033[33mMenginisialisasi Hukum Gravitasi Newton...\033[0m\n\n";
     this_thread::sleep_for(chrono::seconds(2));
 
-    // Animasi bergerak mendekat
+    
     while(jarak > 0) {
-        // \r menimpa baris yang sama agar terlihat bergerak
+        
         cout << "\r" << string(padding_kiri, ' ') << "(A)" << string(jarak, '-') << "(B)" << flush;
         
         jarak -= 2;
-        padding_kiri += 1; // Biar titik temunya pas di tengah
+        padding_kiri += 1; 
         
         this_thread::sleep_for(chrono::milliseconds(300));
     }
 
-    // Hasil tumbukan/pertemuan
+    
     cout << "\r" << string(padding_kiri, ' ') << "(A❤️B)" << string(20, ' ') << "\n\n";
     
     this_thread::sleep_for(chrono::seconds(1));
