@@ -16,10 +16,10 @@ int main() {
         this_thread::sleep_for(chrono::milliseconds(30));
     }
 
-    // Bersihkan layar (Cross-platform command)
+   
     system("clear || cls");
 
-    // Pesan rahasia muncul
+    
     cout << "\033[1;32m[SYSTEM] DECRYPTING HEART... SUCCESS!\033[0m\n\n";
     this_thread::sleep_for(chrono::seconds(1));
     
