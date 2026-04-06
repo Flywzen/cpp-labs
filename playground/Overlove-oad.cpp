@@ -27,7 +27,7 @@ int main() {
     cout << "\n\n\033[1;31m[FATAL ERROR] Variable 'Love' exceeded maximum capacity (Integer Overflow).\033[0m\n";
     
     this_thread::sleep_for(chrono::seconds(3));
-    cout << "\033[35m...Just kidding, I just really love you!\033[0m\n\n";
+    cout << "\033[35m...Just kidding, I love you the way you are!\033[0m\n\n";
 
     return 0;
 }
