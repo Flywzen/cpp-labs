@@ -24,11 +24,11 @@ int main() {
     }
 
     
-    cout << "\r" << string(padding_kiri, ' ') << "(A❤️B)" << string(20, ' ') << "\n\n";
+    cout << "\r" << string(padding_kiri, ' ') << "(Rafly❤️Hanna)" << string(20, ' ') << "\n\n";
     
     this_thread::sleep_for(chrono::seconds(1));
     cout << "Menurut Newton, benda bermassa akan saling tarik-menarik...\n";
-    cout << "\033[1;35mPantesan aku selalu tertarik sama kamu secara eksponensial. ✨\033[0m\n\n";
+    cout << "\033[1;35mDan itu adalah alasan mengapa aku selalu tertarik padamu secara eksponensial. ✨\033[0m\n\n";
 
     return 0;
 }
